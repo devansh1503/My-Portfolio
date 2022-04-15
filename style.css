@@ -95,6 +95,9 @@ i:hover{
 .about h3{
     color: white;
 }
+.biodata{
+    max-width: 500px;
+}
 .skills{
     background-color: #ffffff10;
     backdrop-filter: blur(12px);
@@ -113,11 +116,15 @@ i:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 .skill i{
     font-size: 40px;
     margin-right: 10px;
+}
+.skill h3{
+    color: rgb(26, 25, 25);
 }
 .projects{
     background-color: #ffffff10;
@@ -130,19 +137,20 @@ i:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px 20px;
 }
 .project{
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .project button{
     border: none;
-    padding: 10px 20px;
-    background-color: rgb(71, 68, 68);
-    font-size: 15px;
-    color: wheat;
+    padding: 5px 20px;
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    color: purple;
     margin-left: 10px;
     transition: all ease-in-out;
 }
@@ -161,15 +169,14 @@ i:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px 20px;
 }
 .certificate{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
-    color: rgb(63, 52, 52);
+    margin: 7px 0px;
+    color: rgb(0, 0, 0);
 }
 .certificate img{
     height: 50px;
@@ -178,12 +185,13 @@ i:hover{
 }
 .certificate button{
     border: none;
-    background-color: rgb(184, 174, 174);
+    background-color: rgb(114, 114, 114);
     color: white;
     padding: 10px 20px;
     font-size: 15px;
     margin-left: 10px;
     border-radius: 15px;
+    cursor: pointer;
 }
 .certificate button:hover{
     background-color: rgb(44, 38, 38);
@@ -247,7 +255,7 @@ i:hover{
 @keyframes circles{
     0%{transform: translate(60%,60%);}
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
     body{
         color: white;
     }
@@ -293,8 +301,14 @@ i:hover{
     .skills{
         width: 100%;
     }
+    .skills h3{
+        color: rgb(76, 193, 223);;
+    }
     .cert{
         width: 100%;
+    }
+    .certificate button{
+        background-color: black;
     }
     .links{
         width: 100%;
